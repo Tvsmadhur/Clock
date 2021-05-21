@@ -11,15 +11,11 @@ class App extends Component {
   }
     componentDidMount() {
 
-    setInterval(this.currentTime, 1000);
+    this.interval=setInterval(this.currentTime, 1000);
 
   }
 
-  componentDidUpdate() {
-
-    this.interval = setInterval(this.currentTime, 1000);
-
-  }
+  
 
   componentWillUnmount() {
 

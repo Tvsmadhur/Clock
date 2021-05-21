@@ -4,7 +4,7 @@ import '../styles/App.css';
 class App extends Component {
      constructor(props) {
 
-    super();
+    super(props);
 
     this.state = { time: new Date() };
 
@@ -29,7 +29,7 @@ class App extends Component {
 
   currentTime = () => {
 
-    this.setState({time:new Date()})
+    this.setState({time:new Date()});
 
   }
     render() {
